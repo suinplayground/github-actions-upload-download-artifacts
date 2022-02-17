@@ -17,5 +17,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: package
-          path: *.tgz
+          path: '*.tgz'
           if-no-files-found: error # 'warn' or 'ignore' are also available, defaults to `warn`
