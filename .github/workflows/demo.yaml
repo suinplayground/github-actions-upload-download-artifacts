@@ -23,6 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: [build_and_test]
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: npm install, build, and test
+        run: npm install
       - run: env
       - run: npm list -g --depth=0
       - run: npm list --depth=0
