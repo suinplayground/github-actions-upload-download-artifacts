@@ -14,6 +14,7 @@ jobs:
   log-the-inputs:
     runs-on: ubuntu-latest
     steps:
+      - run: env
       - name: machine echo github
         env: { CONTENT: "${{ toJson(github) }}" }
         run: "echo $CONTENT"
