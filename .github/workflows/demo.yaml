@@ -19,3 +19,8 @@ jobs:
           name: package
           path: '*.tgz'
           if-no-files-found: error # 'warn' or 'ignore' are also available, defaults to `warn`
+      - run: env
+      - run: npm list -g --depth=0
+      - run: npm list --depth=0
+      - run: node --version
+      - run: node info.js
