@@ -24,3 +24,5 @@ jobs:
       - run: npm list --depth=0
       - run: node --version
       - run: node info.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
