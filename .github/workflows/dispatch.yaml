@@ -14,3 +14,5 @@ jobs:
           git add a
           git commit -m "a"
           gh pr create -t test -b aaaa
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
