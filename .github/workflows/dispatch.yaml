@@ -11,6 +11,7 @@ jobs:
           touch a
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
+          git checkout -b pr
           git add a
           git commit -m "a"
           gh pr create -t test -b aaaa
