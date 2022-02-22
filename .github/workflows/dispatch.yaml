@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          touch a
+          git add a
+          git commit -m "a"
+          gh pr create -t test -b aaaa
