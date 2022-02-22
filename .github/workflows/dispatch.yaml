@@ -14,6 +14,7 @@ jobs:
           git checkout -b pr
           git add a
           git commit -m "a"
+          git push -u origin pr
           gh pr create -t test -b aaaa
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
